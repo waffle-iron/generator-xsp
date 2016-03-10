@@ -11,9 +11,13 @@ describe('generator-xsp:app', function () {
       .on('end', done);
   });
 
-  it('creates files', function () {
+  it('creates required ODP files', function () {
     assert.file([
-      'dummyfile.txt'
+      'ODP/.project',
+      'ODP/AppProperties/database.properties',
+      'ODP/plugin.xml',
+      'ODP/.classpath',
+      'ODP/Resources/IconNote'
     ]);
   });
 });
