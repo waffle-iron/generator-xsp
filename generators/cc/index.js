@@ -19,20 +19,20 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async();
     // And you can then access it later on this way; e.g. CamelCased
-    var myXPageName = _.camelCase(this.ccname);
-    if( !myXPageName || myXPageName=="" ){
+    var myCcName = _.camelCase(this.ccname);
+    if( !myCcName || myCcName=="" ){
       this.prompt({
         type: 'input',
         name: 'name',
-        message: 'Your XPage name',
-        default: 'home'
+        message: 'Your Custom Control name',
+        default: 'cc_some'
       }, function (answers) {
         this.props = answers;
-        this.log(answers.name);
+        //this.log(answers.name);
         done();
       }.bind(this));
     }else{
-      this.log(myXPageName);
+      //this.log(myCcName);
       done();
     }
   },
@@ -42,8 +42,8 @@ module.exports = yeoman.generators.Base.extend({
     config: function () {
       var tmpName = _.camelCase(this.ccname)||this.props.name;
       this.fs.copyTpl(
-        this.templatePath('some.xsp'),
-        this.destinationPath('ODP/XPage/'+tmpName+'.xsp'), {
+        this.templatePath('cc_some.xsp'),
+        this.destinationPath('ODP/CustomControls/'+tmpName+'.xsp'), {
           name: tmpName
         }
       );
