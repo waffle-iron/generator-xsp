@@ -27,7 +27,7 @@ yo xsp
 
 Importing your On Disk Project (ODP) into IBM Domino Designer is the end-goal. This will not work as a full NSF application without being interacted with from a Domino Designer instance.
 
-If you need help getting started with source control and its relationship to Domino/XPages applicaitons, you may wish to get started at Notes in 9 episode 131: Use SourceTree for Better XPages Source Control](http://www.notesin9.com/2013/11/12/notesin9-131-use-sourcetree-for-better-xpages-source-control/).
+If you need help getting started with source control and its relationship to Domino/XPages applicaitons, you may wish to get started at [Notes in 9 episode 131: Use SourceTree for Better XPages Source Control](http://www.notesin9.com/2013/11/12/notesin9-131-use-sourcetree-for-better-xpages-source-control/).
 
 ### Sub-Generators
 
