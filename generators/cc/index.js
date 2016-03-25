@@ -9,10 +9,8 @@ module.exports = yeoman.generators.Base.extend({
   // note: arguments and options should be defined in the constructor.
   constructor: function () {
     yeoman.generators.Base.apply(this, arguments);
-
     // This makes `ccname` an optional argument.
-    this.argument('ccname', { type: String, required: false });
-    
+    this.argument('ccname', {type: String, required: false});
   },
   // Configurations loading
   // Ask for user imput
@@ -20,7 +18,7 @@ module.exports = yeoman.generators.Base.extend({
     var done = this.async();
     // And you can then access it later on this way; e.g. CamelCased
     var myCcName = _.camelCase(this.ccname);
-    if( !myCcName || myCcName=="" ){
+    if (!myCcName || myCcName === "") {
       this.prompt({
         type: 'input',
         name: 'name',
@@ -28,11 +26,11 @@ module.exports = yeoman.generators.Base.extend({
         default: 'cc_some'
       }, function (answers) {
         this.props = answers;
-        //this.log(answers.name);
+        // this.log(answers.name);
         done();
       }.bind(this));
-    }else{
-      //this.log(myCcName);
+    } else {
+      // this.log(myCcName);
       done();
     }
   },
@@ -40,10 +38,10 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     // Copy the configuration files
     config: function () {
-      var tmpName = _.camelCase(this.ccname)||this.props.name;
+      var tmpName = _.camelCase(this.ccname) || this.props.name;
       this.fs.copyTpl(
         this.templatePath('cc_some.xsp'),
-        this.destinationPath('ODP/CustomControls/'+tmpName+'.xsp'), {
+        this.destinationPath('ODP/CustomControls/' + tmpName + '.xsp'), {
           name: tmpName
         }
       );
