@@ -98,5 +98,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [travis-url]: https://travis-ci.org/edm00se/generator-xsp
 [daviddm-image]: https://david-dm.org/edm00se/generator-xsp.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/edm00se/generator-xsp
-[codecov-image]: https://img.shields.io/codecov/c/github/codecov/example-python.svg
+[codecov-image]: https://codecov.io/github/edm00se/generator-xsp/coverage.svg
 [codecov-url]: https://codecov.io/github/edm00se/generator-xsp
