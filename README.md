@@ -2,7 +2,7 @@
 
 > a yeoman generator to scaffold an XPages runtime (xsp) compliant On Disk Project (ODP)
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][codecov-image]][codecov-url]
 
 ## Installation
 
@@ -98,5 +98,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [travis-url]: https://travis-ci.org/edm00se/generator-xsp
 [daviddm-image]: https://david-dm.org/edm00se/generator-xsp.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/edm00se/generator-xsp
-[coveralls-image]: https://coveralls.io/repos/github/edm00se/generator-xsp/badge.svg
-[coveralls-url]: https://coveralls.io/github/edm00se/generator-xsp
+[codecov-image]: https://img.shields.io/codecov/c/github/codecov/example-python.svg
+[codecov-url]: https://codecov.io/github/edm00se/generator-xsp
