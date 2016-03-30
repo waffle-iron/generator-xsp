@@ -5,10 +5,10 @@ var yeoman = require('yeoman-generator');
 // var yosay = require('yosay');
 var _ = require('lodash');
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
   // note: arguments and options should be defined in the constructor.
   constructor: function () {
-    yeoman.generators.Base.apply(this, arguments);
+    yeoman.Base.apply(this, arguments);
     // This makes `ccname` an optional argument.
     this.argument('ccname', {type: String, required: false});
   },

@@ -5,19 +5,19 @@ var yeoman = require('yeoman-generator');
 // var yosay = require('yosay');
 var _ = require('lodash');
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
   // note: arguments and options should be defined in the constructor.
   constructor: function () {
-    yeoman.generators.Base.apply(this, arguments);
-    // This makes `ccname` an optional argument.
-    this.argument('ccname', {type: String, required: false});
+    yeoman.Base.apply(this, arguments);
+    // This makes `xpagename` an optional argument.
+    this.argument('xpagename', {type: String, required: false});
   },
   // Configurations loading
   // Ask for user imput
   prompting: function () {
     var done = this.async();
     // And you can then access it later on this way; e.g. CamelCased
-    var myXPageName = _.camelCase(this.ccname);
+    var myXPageName = _.camelCase(this.xpagename);
     if (!myXPageName || myXPageName === "") {
       this.prompt({
         type: 'input',
@@ -38,7 +38,7 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     // Copy the configuration files
     config: function () {
-      var tmpName = _.camelCase(this.ccname) || this.props.name;
+      var tmpName = _.camelCase(this.xpagename) || this.props.name;
       this.fs.copyTpl(
         this.templatePath('some.xsp'),
         this.destinationPath('ODP/XPage/' + tmpName + '.xsp'), {
