@@ -7,7 +7,7 @@ var testFileName = 'foo';
 describe('generator-xsp:xpage', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/xpage'))
-      .withArguments(testFileName)
+      .withPrompts({name: testFileName})
       .on('end', done);
   });
 

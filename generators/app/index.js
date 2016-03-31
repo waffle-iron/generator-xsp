@@ -3,6 +3,7 @@
 var yeoman = require('yeoman-generator');
 // var chalk = require('chalk');
 // var yosay = require('yosay');
+require('../../common');
 
 module.exports = yeoman.Base.extend({
   // Configurations loadin

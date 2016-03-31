@@ -2,7 +2,7 @@
 
 > a yeoman generator to scaffold an XPages runtime (xsp) compliant On Disk Project (ODP)
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][codecov-image]][codecov-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][codecov-image]][codecov-url] [![Codacy Badge](codacy-image)](codacy-url) [![semantic-release][semantic-release-image]][semantic-release-url] [![npm][npm-license]][npm-url]
 
 ## Installation
 
@@ -94,9 +94,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [npm-image]: https://badge.fury.io/js/generator-xsp.svg
 [npm-url]: https://npmjs.org/package/generator-xsp
+[npm-license]: https://img.shields.io/npm/l/generator-xsp.svg
 [travis-image]: https://travis-ci.org/edm00se/generator-xsp.svg?branch=master
 [travis-url]: https://travis-ci.org/edm00se/generator-xsp
 [daviddm-image]: https://david-dm.org/edm00se/generator-xsp.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/edm00se/generator-xsp
 [codecov-image]: https://codecov.io/github/edm00se/generator-xsp/coverage.svg
 [codecov-url]: https://codecov.io/github/edm00se/generator-xsp
+[codacy-image]: https://api.codacy.com/project/badge/grade/d2ab498482af4a6fae1f72a39275b36c
+[codacy-url]: https://www.codacy.com/app/edm00se/generator-xsp
+[semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-url]: https://github.com/semantic-release/semantic-release

@@ -7,7 +7,7 @@ var testFileName = 'bar';
 describe('generator-xsp:cc', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/cc'))
-      .withArguments(testFileName)
+      .withPrompts({name: testFileName})
       .on('end', done);
   });
 
