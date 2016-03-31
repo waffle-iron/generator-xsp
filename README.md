@@ -2,7 +2,7 @@
 
 > a yeoman generator to scaffold an XPages runtime (xsp) compliant On Disk Project (ODP)
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][codecov-image]][codecov-url] [![Codacy Badge](codacy-image)](codacy-url) [![semantic-release][semantic-release-image]][semantic-release-url] [![npm][npm-license]][npm-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][codecov-image]][codecov-url] [![Codacy Badge][codacy-image]][codacy-url] [![semantic-release][semantic-release-image]][semantic-release-url] [![npm][npm-license]][npm-url]
 
 ## Installation
 
