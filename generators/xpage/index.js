@@ -41,7 +41,7 @@ module.exports = yeoman.Base.extend({
       var tmpName = _.camelCase(this.xpagename) || this.props.name;
       this.fs.copyTpl(
         this.templatePath('some.xsp'),
-        this.destinationPath('ODP/XPage/' + tmpName + '.xsp'), {
+        this.destinationPath('ODP/XPages/' + tmpName + '.xsp'), {
           name: tmpName
         }
       );
