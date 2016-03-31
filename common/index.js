@@ -2,7 +2,7 @@ var updateNotifier = require('update-notifier');
 var path = require('path');
 
 module.exports = function () {
-  if(!process.env.CI){
+  if (!process.env.CI) {
     var nwPath = path.join(__dirname, '../package.json');
     var pkg = require(nwPath);
     if (pkg.version === null) {
