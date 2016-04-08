@@ -4,6 +4,10 @@
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][codecov-image]][codecov-url] [![Codacy Badge][codacy-image]][codacy-url] [![semantic-release][semantic-release-image]][semantic-release-url] [![npm][npm-license]][npm-url]
 
+## Requirements
+
+Node v4 LTS or v5 stable is required. This *should* work with iojs v3, but is known to fail on node v0.12 and v0.10 ([refs issue #3](https://github.com/edm00se/generator-xsp/issues/3)). If, for some reason, you *need* to make this work on older versions of node, as of [v0.2.0](https://github.com/edm00se/generator-xsp/releases/tag/v0.2.0) you should be able to fork this repo and remove the use of [update-notifier](https://www.npmjs.com/package/update-notifier). It claims to work w/ node >= v0.10, but my experience shows otherwise. But hey, if you're using something older than v4 LTS, what are you up to anyway?
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-xsp using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
