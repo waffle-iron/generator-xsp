@@ -11,6 +11,7 @@
     "generators"
   ],
   "main": "generators/index.js",
+  "engines" : { "node" : ">=4.0.0" },
   "keywords": [
     "xpages",
     "yeoman",
