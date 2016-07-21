@@ -6,7 +6,7 @@
 
 ## Requirements
 
-Node v4 LTS or v5 stable is required. This *should* work with iojs v3, but is known to fail on node v0.12 and v0.10 ([refs issue #3](https://github.com/edm00se/generator-xsp/issues/3)). If, for some reason, you *need* to make this work on older versions of node, as of [v0.2.0](https://github.com/edm00se/generator-xsp/releases/tag/v0.2.0) you should be able to fork this repo and remove the use of [update-notifier](https://www.npmjs.com/package/update-notifier). It claims to work w/ node >= v0.10, but my experience shows otherwise. But hey, if you're using something older than v4 LTS, what are you up to anyway?
+Node v4 LTS, v5, or v6 stable is required. This *should* work with iojs v3, but is known to fail on node v0.12 and v0.10 ([refs issue #3](https://github.com/edm00se/generator-xsp/issues/3)). If, for some reason, you *need* to make this work on older versions of node, as of [v0.2.0](https://github.com/edm00se/generator-xsp/releases/tag/v0.2.0) you should be able to fork this repo and remove the use of [update-notifier](https://www.npmjs.com/package/update-notifier). It claims to work w/ node >= v0.10, but my experience shows otherwise. But hey, if you're using something older than v4 LTS, what are you up to anyway?
 
 ## Installation
 
@@ -22,6 +22,8 @@ npm install -g generator-xsp
 Then generate your new project:
 
 ```bash
+mkdir my-new-proj
+cd my-new-proj
 yo xsp
 ```
 
@@ -61,27 +63,11 @@ Out of the box, you should be prompted for an applicaiton name (which will drive
 
 To see more about how this, and other advanced, node-based tooling, can be used with XPages applications, check out the author's [blog series on task runners with Domino/XPages](https://edm00se.io/task-runners-with-domino-apps).
 
-## Road Map
-
-Currently planned
-
-Near term:
-
-- [x] default app Theme inclusion
-- [ ] starter CSS and JS files
-- [ ] possibly automate pulling from XPages boilerplate resources, such as a `JSFUtil` class, etc.
-
-Long term:
-
-- [ ] config of **common** XSP properties
-- [ ] config inclusion of `ExtLib` (assumes dependency already on server), and/or other/given plugins to enable for NSF
-- [ ] specify the Theme the app theme will extend (Bootstrap 3, oneui, webstandard, etc.)
-- [ ] scaffold basic Java packages and classes
-- [ ] scaffold managed bean (at specified *Scope)
+## [Road Map](docs/RoadMap.md)
 
 ### Want More?
 
-Feel free to report bugs [in Issues](https://github.com/edm00se/generator-xsp/issues), and should you have an addition to the road map, [create a Pull Request to this repo, of just this ReadMe.md](https://github.com/edm00se/generator-xsp/edit/master/ReadMe.md), with what you would like added. If you would like to contribute otherwise, read the [CONTRIBUTING guide](https://github.com/edm00se/generator-xsp/blob/master/CONTRIBUTING.md), then [create a Pull Request from a Fork](https://github.com/edm00se/generator-xsp/compare).
+Feel free to report bugs [in Issues](https://github.com/edm00se/generator-xsp/issues), and should you have an addition to the road map, [create a Pull Request to this repo, of just this ReadMe.md](README.md), with what you would like added. If you would like to contribute otherwise, read the [CONTRIBUTING guide](docs/CONTRIBUTING.md), then [create a Pull Request from a Fork](https://github.com/edm00se/generator-xsp/compare).
 
 ## License
 
