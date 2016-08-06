@@ -1,7 +1,6 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var _ = require('lodash');
-require('../../common');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
