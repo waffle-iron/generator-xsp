@@ -49,6 +49,11 @@ module.exports = yeoman.Base.extend({
       this.templatePath('ODP'),
       this.destinationPath('ODP')
     );
+    // .gitattributes
+    this.fs.copyTpl(
+      this.templatePath('_gitattributes'),
+      this.destinationPath('.gitattributes')
+    );
     // Templated files (to inject app name as received)
     this.fs.copyTpl(
       this.templatePath('_project'),
